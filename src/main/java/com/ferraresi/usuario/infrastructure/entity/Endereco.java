@@ -1,17 +1,15 @@
 package com.ferraresi.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-    @Getter
+@Getter
     @Setter
     @AllArgsConstructor
     @NoArgsConstructor
     @Entity
     @Table(name = "endereco")
+    @Builder
     public class Endereco {
 
         @Id
